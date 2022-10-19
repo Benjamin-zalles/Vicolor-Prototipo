@@ -1,0 +1,361 @@
+.page-color {
+    width: 1140px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    display: flex;
+}
+
+.img-forms-color {
+    width: 100%;
+    position: relative;
+}
+
+.svg1 {
+    position: absolute;
+    top: 149px;
+    left: 134px;
+    animation: movimiento1 5s alternate infinite;
+}
+
+.svg2 {
+    position: absolute;
+    top: 114px;
+    left: 109px;
+    animation: movimiento2 3s alternate infinite;
+}
+
+.svg3 {
+    position: absolute;
+    top: 92px;
+    left: 255px;
+}
+
+.svg4 {
+    position: absolute;
+    top: 233px;
+    left: 254px;
+    animation: movimiento1 4s alternate infinite;
+}
+
+.svg5 {
+    position: absolute;
+    top: 138px;
+    left: 302px;
+    animation: movimiento-eye 6s alternate infinite;
+}
+
+.svg6 {
+    position: absolute;
+    top: 117px;
+    left: 416px;
+    animation: movimiento2 3s alternate infinite;
+}
+
+.svg7 {
+    position: absolute;
+    top: 301px;
+    left: 338px;
+    animation: movimiento1 3s alternate infinite;
+}
+
+.svg8 {
+    position: absolute;
+    top: 0px;
+    left: 222px;
+    animation: movimiento2 3s alternate infinite;
+}
+
+.svg9 {
+    position: absolute;
+    top: 214px;
+    left: 91px;
+    animation: movimiento1 3s alternate infinite;
+}
+
+.svg10 {
+    position: absolute;
+    top: 155px;
+    left: 0px;
+    animation: movimiento2 5s alternate infinite;
+}
+
+@keyframes movimiento1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, 20px);
+    }
+}
+
+
+@keyframes movimiento2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, -20px);
+    }
+}
+
+@keyframes movimiento-eye {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 0px);
+    }
+
+    100% {
+        transform: translate(-20px, 0px)
+    }
+}
+
+.presentacion-page-color {
+    width: 900px;
+}
+
+.page-color .presentacion-page-color h1 {
+    color: var(--colour-tertiary);
+    font-size: var(--h1-size);
+    margin-bottom: 20px;
+    line-height: 100px;
+}
+
+.page-color .presentacion-page-color p {
+    color: var(--colour-white);
+    font-size: var(--p-size);
+    line-height: 1.7;
+}
+
+/* STYLE COLOR PAGES */
+.container-color-pages {
+    max-width: 1140px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px
+    /* display: flex; */
+}
+
+.container-color-pages div h1 {
+    color: var(--colour-tertiary);
+    font-size: var(--h1-size);
+    font-weight: var(--w-Regular);
+}
+
+.container-color-pages div p {
+    color: var(--colour-white);
+    font-size: var(--p-size);
+    font-weight: var(--w-Regular);
+    line-height: 1.5;
+}
+
+.box-rueda-cromatica {
+    display: flex;
+    justify-content: flex-end;
+    /* max-width: 300px; */
+}
+
+.box-rueda-cromatica img {
+    border-radius: 15px;
+    background: #383838;
+    padding: 30px;
+    box-shadow: -4px 8px 11px -8px #000000;
+}
+
+
+/* STYLE COLOR PAGE 2 */
+.container-color-pages-2 {
+    max-width: 1140px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.combinaciones-section-one {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 200px;
+    margin-bottom: 200px;
+}
+
+.combinaciones-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.combinaciones-content h1 {
+    color: var(--colour-tertiary);
+    font-size: var(--h2-size);
+    font-weight: var(--w-Bold);
+}
+
+.combinaciones-content p {
+    color: var(--colour-white);
+}
+
+.combinaciones-content h3 {
+    color: var(--colour-white);
+}
+
+.combinaciones-colores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.combinaciones-colores h3 {
+    color: var(--colour-white);
+    font-weight: var(--w-Regular);
+}
+
+.b-c {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: #383838;
+    display: flex;
+    padding: 10px;
+}
+.b-green {
+    width: 50%;
+    height: 100%;
+    background: green;
+    border-radius: 20px 0 0 20px;
+}
+
+.b-red {
+    width: 50%;
+    height: 100%;
+    background: red;
+    border-radius: 0 20px 20px 0;
+}
+
+.b-green-prota {
+    width: 50%;
+    height: 100%;
+    background: #7F7228;
+    border-radius: 20px 0 0 20px;
+}
+
+.b-red-prota {
+    width: 50%;
+    height: 100%;
+    background: #6C6232;
+    border-radius: 0 20px 20px 0;
+}
+
+/* STYLE COMBINACIONES SECTION TWO */
+.combinaciones-section-two {
+    margin-bottom: 100px;
+}
+
+.box-level-uno {
+    background: #383838;
+    padding: 50px;
+    display: flex;
+    gap: 50px 30px;
+    border-radius: 20px;
+}
+
+.box-level-two-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-level-three-1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.box-level-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-level-four h3 {
+    color: var(--colour-white);
+}
+
+.box-level-four p {
+    text-align: center;
+    color: var(--colour-white);
+    font-size: var(--small-size);
+    font-weight: var(--w-Light);
+}
+
+.box-level-three-2 p {
+    color: var(--colour-white);
+    line-height: 1.7;
+}
+
+.box-level-two-2 {
+    max-width: 500px;
+    padding: 0 50px;
+    line-height: 1.7;
+}
+
+.box-level-two-2 p {
+    color: var(--colour-white);
+    font-size: var(--small-size);
+}
+
+
+
+/* STYLE COMBINACIONES SECTION THREE */
+
+.section-three-content {
+    max-width: 400px;
+    margin-bottom: 100px;
+}
+
+.section-three-content p {
+    font-size: var(--h5-size);
+    color: var(--colour-white);
+    font-weight: var(--w-Light);
+}
+
+.section-three-combinations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.proceso2 {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+.proceso2 img {
+    width: 200px;
+    border-radius: 40px;
+}
+
+.proceso2 h1 {
+    color: var(--colour-tertiary);
+}

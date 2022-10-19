@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background: #2D2D2D;
+}
+
+.principal {
+  width: 100%;
+  /* display: flex; */
+  gap: 50px;
+}
+
+.navbar {
+  width: 150px;
+  z-index: 200;
+}
+
+.main-page {
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2d2d2d;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #383838; /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #383838;  /* creates padding around scroll thumb */
+}
+
