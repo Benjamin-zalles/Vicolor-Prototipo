@@ -1,3 +1,12 @@
+// import React from 'react'
+
+// export default function Checker() {
+//   return (
+//     <div>Checker</div>
+//   )
+// }
+
+
 import '../stylesheets/styleChecker/checker.css';
 import { useState } from 'react'
 // import { ColorBlindDeuta, ColorBlindAcro, ColorBlindTrita, ColorBlindProta } from '../daltonismo/ColorBlind'
@@ -94,7 +103,12 @@ function ColorBlindProta(colorHex){
     setHex3(randomColor3);
     setHex4(randomColor4);
   }
+
+
   
+  
+
+
 
 
 
@@ -105,7 +119,7 @@ function ColorBlindProta(colorHex){
         <div className="content-primary">
           <h1>Consulta de Colores</h1>
           <div className="content-options">
-            <input type="button" value="generate" onClick={randomizedHex}/>
+            {/* <input type="button" value="generate" onClick={randomizedHex}/> */}
             {/* <button onClick={randomizedHex}>Random</button> */}
           </div>
 
@@ -114,7 +128,7 @@ function ColorBlindProta(colorHex){
                 <div className="color-container">
                   <input type="color" value={hex} onChange={(e)=>setHex(e.target.value)}/>
                 </div>
-                <input type="text" value={hex} />
+                <input type="text" value={hex}/>
               </div>
 
               <div className="input-color">
@@ -169,6 +183,7 @@ function ColorBlindProta(colorHex){
 
 
       <div className="types-colour-blind">
+        
         <div className="type-prota">
           <h3>Protanopía</h3>
           <div className="result-prota" style={{
@@ -184,9 +199,59 @@ function ColorBlindProta(colorHex){
             background: ColorBlindProta(hex4),
           }}></div>
         </div>
-        <div className="type-deuta"></div>
-        <div className="type-trita"></div>
-        <div className="type-acro"></div>
+        
+        
+        <div className="type-deuta">
+          <h3>Deuteranopía</h3>
+          <div className="result-deuta" style={{
+            background: ColorBlindDeuta(hex),
+          }}></div>
+          <div className="result-deuta" style={{
+            background: ColorBlindDeuta(hex2),
+          }}></div>
+          <div className="result-deuta" style={{
+            background: ColorBlindDeuta(hex3),
+          }}></div>
+          <div className="result-deuta" style={{
+            background: ColorBlindDeuta(hex4),
+          }}></div>
+        </div>
+
+
+
+        <div className="type-trita">
+        <h3>Tritanopía</h3>
+          <div className="result-trita" style={{
+            background: ColorBlindTrita(hex),
+          }}></div>
+          <div className="result-trita" style={{
+            background: ColorBlindTrita(hex2),
+          }}></div>
+          <div className="result-trita" style={{
+            background: ColorBlindTrita(hex3),
+          }}></div>
+          <div className="result-trita" style={{
+            background: ColorBlindTrita(hex4),
+          }}></div>
+        </div>
+
+
+
+        <div className="type-acro">
+        <h3>Acromático</h3>
+          <div className="result-acro" style={{
+            background: ColorBlindAcro(hex),
+          }}></div>
+          <div className="result-acro" style={{
+            background: ColorBlindAcro(hex2),
+          }}></div>
+          <div className="result-acro" style={{
+            background: ColorBlindAcro(hex3),
+          }}></div>
+          <div className="result-acro" style={{
+            background: ColorBlindAcro(hex4),
+          }}></div>
+        </div>
       </div>
     </div>
   )

@@ -3,18 +3,18 @@ import "../stylesheets/navbar.css";
 import homeNoActive from "../assets/home-noactive.svg";
 import colorNoActive from "../assets/color-noactive.svg";
 import typeNoActive from "../assets/tipografia-noactive.svg";
-import aboutNoActive from "../assets/nosotros-noactive.svg";
+// import aboutNoActive from "../assets/nosotros-noactive.svg";
 import bxColor from "../assets/bx-color.svg";
 import bxsColorFill from "../assets/bxs-color-fill.svg";
-import helpNoActive from "../assets/ayuda-noactive.svg";
-import vicolorIcon from '../assets/Vicolor-icon.svg';
+// import helpNoActive from "../assets/ayuda-noactive.svg";
+// import vicolorIcon from '../assets/Vicolor-icon.svg';
 import burger from '../assets/burger.svg';
 import NavComponentLi from "../components/NavComponentLi";
 import NavVicolor from '../components/NavVicolor'
-import NavHelp from '../components/NavHelp'
-import homeActive from '../assets/home-active.svg';
+// import NavHelp from '../components/NavHelp'
+// import homeActive from '../assets/home-active.svg';
 import {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -63,7 +63,7 @@ export default function Navbar() {
           />
           
           <NavComponentLi
-            direction="/colorChecker"
+            direction="/colorCheck"
             iconUno={bxColor}
             linkName='Consulta'
           />
@@ -74,11 +74,6 @@ export default function Navbar() {
             linkName='Tipografia'
           />
 
-          {/* <NavComponentLi
-            direction="/nosotros"
-            iconUno={aboutNoActive}
-            linkName='Nosotros'
-          /> */}
 
         </ul>
       </div>
