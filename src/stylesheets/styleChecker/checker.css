@@ -119,6 +119,7 @@
 .types-colour-blind .type-prota h3 {
     color: var(--colour-tertiary);
     margin-right: 30px;
+    font-weight: var(--w-Regular);
 }
 
 
@@ -135,7 +136,7 @@
 .types-colour-blind .type-deuta h3 {
     color: var(--colour-tertiary);
     margin-right: 30px;
-
+    font-weight: var(--w-Regular);
 }
 
 
@@ -152,7 +153,7 @@
 .types-colour-blind .type-trita h3 {
     color: var(--colour-tertiary);
     margin-right: 30px;
-
+    font-weight: var(--w-Regular);
 }
 
 
@@ -167,6 +168,7 @@
 .types-colour-blind .type-acro h3 {
     color: var(--colour-tertiary);
     margin-right: 30px;
+    font-weight: var(--w-Regular);
 }
 
 
