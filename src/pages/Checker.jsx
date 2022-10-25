@@ -155,7 +155,6 @@ function ColorBlindProta(colorHex){
           </div>
         </div>
         
-        
         <div className="content-secundary">
           <div className="boxs-colors" style={{
             background: hex,
