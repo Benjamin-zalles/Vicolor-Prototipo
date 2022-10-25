@@ -5,8 +5,6 @@ import '../stylesheets/navLi.css'
 export default function NavComponentLi(props) {
   return (
 
-
-
     <li className="navli" >
         <NavLink
         to={props.direction}

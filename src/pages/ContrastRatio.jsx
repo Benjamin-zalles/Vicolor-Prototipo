@@ -64,11 +64,7 @@ export default function contrastRatio() {
         }
     }
     
-    
-    
     // const [name, setName] = useState("");
-    
-
     return (
       <div className="general-color" style={{ 
         // background: color2,

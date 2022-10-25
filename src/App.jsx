@@ -28,12 +28,8 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/color' element={<Color />}/>
         <Route path='/tipografia' element={<Tipografia />}/>
-
         <Route path='/contrastRatio' element={<ContrastRatio/>}/>
         <Route path='/colorChecker' element={<ColorChecker/>}/>
-        
-        <Route path='/nosotros' element={<Nosotros />}/>
-        <Route path='/ayuda' element={<Ayuda />}/>
       </Routes>
       </div>
     
