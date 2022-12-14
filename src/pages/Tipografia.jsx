@@ -20,7 +20,7 @@ export default function Tipografia() {
             <img src={circle2} className="img-type-2"/>
           </div>
         </div>
-        
+        11
         <div className="container-one-content">
             <h1>Manejo de Tipografía</h1>
             <p>La tipografía es la gran salvadora al momento de comunicar lo que el color no puede hacer, la gran mayoría de las personas pueden leer y de esa manera poder ejecutar acciones o tomar decisiones dentro de un producto digital. </p>

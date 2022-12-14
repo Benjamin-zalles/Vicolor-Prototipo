@@ -19,14 +19,15 @@
 
 .color-contrast-section-uno {
     display: flex;
+    gap: 30px;
     /* background: red; */
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
 }
 
 
 .input-color-uno {
     background: #383838;
-    width: 300px;
+    width: 200px;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@
 
 .input-color-dos {
     background: #383838;
-    width: 300px;
+    width: 200px;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -69,6 +70,61 @@
     color: var(--colour-tertiary);
     font-weight: var(--w-Regular);
 }
+
+.result-calculate-AA {
+    color: white;
+    background: #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: -4px 8px 11px -8px #000000;
+}
+
+.result-calculate-AA h2 {
+    color: var(--colour-tertiary);
+}
+
+.t-text {
+    color: var(--colour-secondary);
+    font-weight: var(--w-Regular);
+}
+
+.result-calculate-AAA {
+    color: white;
+    background: #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: -4px 8px 11px -8px #000000;
+}
+
+.result-calculate-AAA h2 {
+    color: var(--colour-tertiary);
+}
+
+
+.level-AA {
+    display: flex;
+    gap: 20px;
+}
+
+.activeRed {
+    color: rgb(213, 73, 73);
+}
+
+
+.level-AAA {
+    display: flex;
+    gap: 20px;
+}
+
+
 
 .color-contrast-section-two {
     display: flex;

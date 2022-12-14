@@ -54,15 +54,44 @@ export default function contrastRatio() {
         };
     };
 
-    function levelAA() {
-        if(calculatePoint(numString) >= '4.5'){
-            return 'Pass';
-        } else if (calculatePoint(numString) >= '10.00'){
-            return 'Pass';
+  
+    
+    function levelAANormal() {
+        if(calculatePoint(numString) < '4.05'){
+            return 'Fallo';
         } else {
-            return 'Fail'
+            return 'Bien'
         }
     }
+    
+    function levelAALarge() {
+        if(calculatePoint(numString) < '3'){
+            return 'Fallo';
+        } else {
+            return 'Bien'
+        }
+    }
+
+    function levelAAANormal() {
+        if(calculatePoint(numString) < '7'){
+            return 'Fallo';
+        } else {
+            return 'Bien'
+        }
+    }
+
+    function levelAAALarge() {
+        if(calculatePoint(numString) < '4.5'){
+            return 'Fallo';
+        } else {
+            return 'Bien'
+        }
+    }
+
+
+
+
+
     
     // const [name, setName] = useState("");
     return (
@@ -92,9 +121,38 @@ export default function contrastRatio() {
               <input type="color" onChange={(e)=>setColor2(e.target.value)}/>
           </div>
           
-          <div>
-              <h2>{calculatePoint(numString)}</h2>
-              <h2>{levelAA()}</h2>
+          <div className="result-calculate-AA">
+              <h2>Nivel AA</h2>
+              <div className="level-AA">
+                <div className="text-normal">
+                  <h3 className="t-text">Texto Normal</h3>
+                  <h3>{calculatePoint(numString)}</h3>
+                  <h4 className={levelAANormal() === 'Fallo' ? "activeRed" : null}>{levelAANormal()}</h4>
+                </div>
+
+                <div className="text-large">
+                  <h3 className="t-text">Texto Grande</h3>
+                  <h3>{calculatePoint(numString)}</h3>
+                  <h4 className={levelAALarge() === 'Fallo' ? "activeRed" : null}>{levelAALarge()}</h4>
+                </div>
+              </div>
+          </div>
+
+          <div className="result-calculate-AAA">
+              <h2>Nivel AAA</h2>
+              <div className="level-AAA">
+                <div className="text-normal">
+                  <h3 className="t-text">Texto Normal</h3>
+                  <h3>{calculatePoint(numString)}</h3>
+                  <h4 className={levelAAANormal() === 'Fallo' ? "activeRed": null}>{levelAAANormal()}</h4>
+                </div>
+
+                <div className="text-large">
+                  <h3 className="t-text">Texto Grande</h3>
+                  <h3>{calculatePoint(numString)}</h3>
+                  <h4 className={levelAAALarge() === 'Fallo' ? "activeRed" : null}>{levelAAALarge()}</h4>
+                </div>
+              </div>
           </div>
 
         </div>
